@@ -3,7 +3,7 @@ const dotEnv = require('dotenv');
 const mongoose = require('mongoose');
 const path = require('path');
 const UserRoutes = require('./routes/User');
-const ExpenseRoutes = require('./routes/Expense');
+const MovieRoutes = require('./routes/Movie');
 
 const app = express();
 const port = 3000 || process.env.PORT;
@@ -20,8 +20,8 @@ mongoose.connect(process.env.MONGODB_URL).then(() => {
 //User Routes
 app.use('/api/v1/user', UserRoutes);
 
-//Expense Routes
-app.use('/api/v1/expense', ExpenseRoutes);
+//Movie Routes
+app.use('/api/v1/movie', MovieRoutes);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
