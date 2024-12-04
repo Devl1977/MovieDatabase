@@ -1,39 +1,58 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Register Page</title>
-    <script defer src="./index.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
-      <div class="sm:mx-auto sm:w-full sm:max-w-sm">
-        <img class="mx-auto h-40 w-auto rounded-full" src="https://cdn.discordapp.com/avatars/543289284300374037/0be93067ef7dd9a3a2a173eb97d986d3.webp" alt="White Dogs Rule Inc.">
-        <h2 class="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">Register for an account</h2>
-      </div>
-    
-      <div class="mt-10 sm:mx-auto sm:w-full sm:max-w-sm">
-        <form class="space-y-6" action="#" method="POST">
-          <div>
-            <label for="name" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
-            <div class="mt-2">
-              <input id="name" name="name" type="text" placeholder="Enter your name" required class="pl-4 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-            </div>
-          </div>
-    
-          <div>
-            <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email</label>
-            <div class="mt-2">
-              <input id="email" name="email" type="email" autocomplete="email" placeholder="Enter your email" required class="pl-4 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
-            </div>
-          </div>
-          
-    
-          <div>
-            <button type="button" onclick="registerMe(event)" class="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Register</button>
-          </div>
-        </form>
-    
+<!--Remember the ask.  LOOK at the image and also what is being asked.-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samms Movie Database </title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <!--Navigation section for html goes here
+    where it should be a header will need a few div classes here i guess and class ID's-->
+    <header class="entirenavbar">
+    <div><ul>
+        <!--Will try to get to this navbar but as it's not 100% in the ask saving this till later-->
+        <li ><a class="active" href="#home">T M D B</a></li>
+        <li ><a href="#Movies">Movies</a></li> 
+        <li ><a href="#TV_Shows">TV Shows</a></li>
+        <li ><a href="#People">People</a></li> 
+        <li ><a href="#More">More</a></li> 
+        
+
+        <!-- <li style="float:right"><a href="profile.html">Profile</a></li> -->
+        <li style="float:right"><a href="register.html">Register</a></li>
+        <li style="float:right"><a href="#Language">EN</a></li>
+        <li style="float:right"><a href="#">+</a></li> 
+        <li style="float:right"><a href="#watchlist" id="watchlistButton">Watchlist</a></li>
+      </ul>
+    </div>
+
+      <!--main section or banner/body -->
+    <div id="banner">
+      <br><br><br><br><br><br>
+      <h1>Welcome.</h1>
+      <h1>Millions of movies, TV shows and people to discover.  Explore now.</h1>
+      <br><br>
+      <div class="input-container">
+        <input type="text" class="search" id="searchInput" placeholder="Looking for a movie?">
+        <button id="searchButton" onclick="searchMovie()">Search</button>
+        <div id="suggestions" class="suggestions-container"></div>
       </div>
     </div>
-  </body>
+    <div id="buttons-layer">
+      <h1>Movie Type: <span id="movie-type"></span></h1>
+      <button id="upcoming"> Upcoming Movies</button>
+      <button id="popular"> Popular Movies</button>
+      <button id="top_rated"> Top Rated Movies</button>
+      <br><br>
+    </div>
+    <div class="grid-container">
+        
+    </div>
+
+      </body>
+      </html>
+</body>
+</html>
