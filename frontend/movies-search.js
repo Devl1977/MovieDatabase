@@ -182,12 +182,23 @@ async function addToWatchlist(movie) {
     }
 }
 
+// edited this for Junit testing
+function setupWatchlistButton() {
+  const viewWatchlistButton = document.getElementById("viewWatchlistButton");
+  if (viewWatchlistButton) {
+    viewWatchlistButton.addEventListener("click", (event) => {
+      event.preventDefault(); // prevents default anchor behavior
+      viewWatchlist(); // this calls the function to display only watchlist items
+    });
+  } else {
+    console.warn("viewWatchlistButton not found in the DOM.");
+  }
+}
 
-const viewWatchlistButton = document.getElementById("viewWatchlistButton");
-viewWatchlistButton.addEventListener("click", (event) => {
-  event.preventDefault(); // prevents default anchor behavior
-  viewWatchlist(); // this calls the function to display only watchlist items
-});
+module.exports = {
+  setupWatchlistButton,
+};
+// edited this for Junit testing
 
 // view watchlist function:
 async function viewWatchlist() {
