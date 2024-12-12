@@ -33,6 +33,15 @@
 # File Structure:
 ![2024-12-04_11h39_03](https://github.com/user-attachments/assets/fe012a50-c098-4ae7-81f6-5e4000192e7e)
 
+# Class Diagrams for Client side and Server Side
+## Server Class Diagram:
+![2024-12-12_01h42_56](https://github.com/user-attachments/assets/bb009d00-a98b-486a-b791-fd487b60eb79)
+
+## Client Class Diagram:
+![2024-12-12_01h44_15](https://github.com/user-attachments/assets/34f23fcf-69ce-4621-802d-579d4d282ecc)
+
+
+
 # Some Future Enhancements
 - User authentication and role management.
 - Add TV shows and people search functionalities.
