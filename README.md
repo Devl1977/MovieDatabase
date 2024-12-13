@@ -1,7 +1,7 @@
 # Overview
 ### My Movie Database is a web application that enables users to discover movies, manage their watchlist, and view details like genres, ratings, and release dates. The app integrates with the TMDB API to fetch movie data and provides a user-friendly interface for seamless navigation.
 > [!IMPORTANT]
-> The main focuson this Project was to see if I could utilize the Client and Server communication.  With the assistance of TMDB I was able to initially gather all the needed details for movies to apply and pull to my website using an API.  But then using also using Client/Server with the watchlist to help prove that this was "do-able".
+> The main focus on this Project was to see if I could utilize the Client and Server communication.  With the assistance of TMDB I was able to initially gather all the needed details for movies to apply and pull to my website using an API.  But then using also using Client/Server with the watchlist to help prove that this was "do-able".
 
 # Features
 - Movie Search: Search for movies by title.
@@ -32,6 +32,15 @@
 
 # File Structure:
 ![2024-12-04_11h39_03](https://github.com/user-attachments/assets/fe012a50-c098-4ae7-81f6-5e4000192e7e)
+
+# Class Diagrams for Client side and Server Side
+## Server Class Diagram:
+![2024-12-12_01h42_56](https://github.com/user-attachments/assets/bb009d00-a98b-486a-b791-fd487b60eb79)
+
+## Client Class Diagram:
+![2024-12-12_01h44_15](https://github.com/user-attachments/assets/34f23fcf-69ce-4621-802d-579d4d282ecc)
+
+
 
 # Some Future Enhancements
 - User authentication and role management.
