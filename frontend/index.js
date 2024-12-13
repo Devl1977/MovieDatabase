@@ -2,15 +2,6 @@
 // as you can probably see im using an API to call themovieDB.org and get information from their database so i can populate my website.
 // I am attempting to store the watch list to another database on mongoDB.  Lets see how well that goes.
 
-// upated this for junit testing 
-
-import { setupWatchlistButton } from "./movies-search.js";
-
-document.addEventListener("DOMContentLoaded", () => {
-  setupWatchlistButton();
-});
-
-// updated this for junit testing ^^
 
 const searchInput = document.getElementById("searchInput");
 
